@@ -1,27 +1,25 @@
 <template>
   <div id="eachList">
-    <nav>
-      <ul class="pagination">
-        <li class="page-item">
-          <a @click="first" class="page-link" href="#">&laquo;</a>
-        </li>
-        <li class="page-item">
-          <a @click="prev" class="page-link" href="#">&lt;</a>
-        </li>
-        <li
-          v-for="i in displayPageRange" :key="i"
-          class="page-item"
-          :class="{active: i-1 === currentPage}">
-          <a @click="pageSelect(i)" class="page-link" href="#">{{ i }}</a>
-        </li>
-        <li class="page-item">
-          <a @click="next" class="page-link" href="#">&gt;</a>
-        </li>
-        <li class="page-item">
-          <a @click="last" class="page-link" href="#">&raquo;</a>
-        </li>
-      </ul>
-    </nav>
+    <ul class="pagination justify-content-center">
+      <li class="page-item">
+        <a @click="first" class="page-link" href="#">&laquo;</a>
+      </li>
+      <li class="page-item">
+        <a @click="prev" class="page-link" href="#">&lt;</a>
+      </li>
+      <li
+        v-for="i in displayPageRange" :key="i"
+        class="page-item"
+        :class="{active: i-1 === currentPage}">
+        <a @click="pageSelect(i)" class="page-link" href="#">{{ i }}</a>
+      </li>
+      <li class="page-item">
+        <a @click="next" class="page-link" href="#">&gt;</a>
+      </li>
+      <li class="page-item">
+        <a @click="last" class="page-link" href="#">&raquo;</a>
+      </li>
+    </ul>
     <div v-for="event in displayEvents" :key="event.index">
       <b-card-group>
         <b-card bg-variant="light" v-bind:header="event.event_name" class="mb-3 center">
@@ -127,6 +125,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-</style>
