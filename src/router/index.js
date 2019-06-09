@@ -8,6 +8,7 @@ import Category from '@/components/Category'
 Vue.use(Router)
 
 export default new Router({
+  base: process.env.ROOT_BASE,
   routes: [
     {
       path: '/',
