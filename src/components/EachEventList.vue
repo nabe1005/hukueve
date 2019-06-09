@@ -53,7 +53,7 @@ export default {
     return {
       currentPage: 0,
       size: null,
-      pageRange: 10,
+      pageRange: 6,
       events: []
     }
   },
