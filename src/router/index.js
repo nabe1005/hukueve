@@ -8,12 +8,16 @@ import Category from '@/components/Category'
 Vue.use(Router)
 
 export default new Router({
-  base: process.env.ROOT_BASE,
   routes: [
     {
       path: '/',
       name: 'Top',
       component: Top
+    },
+    {
+      path: '/category',
+      name: 'Category',
+      component: Category
     },
     {
       path: '/list/all',
@@ -24,11 +28,6 @@ export default new Router({
       path: '/list/:each',
       name: 'EachList',
       component: EachList
-    },
-    {
-      path: '/category',
-      name: 'Category',
-      component: Category
     }
   ]
 })
