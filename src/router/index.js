@@ -4,6 +4,7 @@ import Top from '@/components/Top'
 import List from '@/components/AllEventList'
 import EachList from '@/components/EachEventList'
 import Category from '@/components/Category'
+import EachMonth from '@/components/EachMonth'
 
 Vue.use(Router)
 
@@ -18,6 +19,11 @@ export default new Router({
       path: '/category',
       name: 'Category',
       component: Category
+    },
+    {
+      path: '/month',
+      name: 'Month',
+      component: EachMonth
     },
     {
       path: '/list/all',

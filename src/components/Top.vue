@@ -5,7 +5,8 @@
       <h1>福井イベント情報局、hukueveへようこそ</h1>
       <p>本サイトでは、福井県のイベントについて紹介しております。<br>
         イベントを一覧で見たい方は<router-link :to="{name: 'AllList' }">イベント一覧</router-link>から、<br>
-        カテゴリごとに見たい方は<router-link :to="{name: 'Category'}">カテゴリ</router-link>をご覧ください。</p>
+        カテゴリごとに見たい方は<router-link :to="{name: 'Category'}">カテゴリごと表示</router-link>から、<br>
+        月別に見たい方は<router-link :to="{name: 'EachMonth'}">月ごとに表示</router-link>をご覧ください。</p>
     </div>
   </div>
 </template>

@@ -1,9 +1,9 @@
 <template>
   <div id="allList">
     <b-form-input v-model="keyword" class="mb-3" placeholder="イベントを検索"></b-form-input>
-    <b-card-group columns>
+    <b-card-group>
     <div v-for="event in filterdEvents" :key="event.index">
-      <b-card bg-variant="light" v-bind:header="event.event_name">
+      <b-card bg-variant="light" v-bind:header="event.event_name" class="mb-3 center">
         <b-card-text class="text-left">{{ event.description }}<br><br>
           日時: {{ event.start_date }} ～ {{ event.end_date }}<br>
           <span class="text-left" v-if="event.event_place_url != ''">場所: <a v-bind:href="event.event_place_url">{{ event.event_place }}</a></span>

@@ -11,7 +11,8 @@
               <b-dropdown-item :to="{name: 'EachList', params: {each: 10}}">10件ずつ</b-dropdown-item>
               <b-dropdown-item :to="{name: 'EachList', params: {each: 30}}">30件ずつ</b-dropdown-item>
             </b-nav-item-dropdown>
-            <b-nav-item :to="{name: 'Category'}">カテゴリ</b-nav-item>
+            <b-nav-item :to="{name: 'Category'}">カテゴリごと表示</b-nav-item>
+            <b-nav-item :to="{name: 'Month'}">月ごと表示</b-nav-item>
           </b-navbar-nav>
         </b-collapse>
       </b-navbar>
